@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="Dashboard.css" />
+    <!-- CSS responsive link  -->
+    <link rel="stylesheet" href="Dashboard res.css" />
+    <!-- font awesome link  -->
+    <script
+      src="https://kit.fontawesome.com/5f03d21864.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav bar starts  -->
+    <nav class="nav-bar">
+      <h1 class="nav-head">COINVISE</h1>
+
+      <div class="search">
+        <div class="search-img">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          placeholder="Search for creators or communities"
+          class="search-box"
+          style="width: 400px"
+          name=""
+          id=""
+        />
+      </div>
+      <button class="learn">LEARN</button>
+      <button class="login">LOGIN</button>
+      <div class="light" style="height: 20px; width: 20px">
+        <svg viewBox="0 0 512 512">
+          <path
+            d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"
+          />
+        </svg>
+      </div>
+    </nav>
+    <!-- LEFT BOX  -->
+    <div class="main-content">
+      <div class="left">
+        <div class="left-box">
+          <img
+            src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fnav%2Fdashboard-color.svg&w=48&q=75"
+            class="left-img"
+          />
+ 
+          <div class="left-text" onclick="dash()" id="dash">
+            <h2>Dashboard</h2>
+            <p>Build a tokenized community</p>
+          </div>
+        </div>
+        <div class="left-box">
+          <img
+            src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fnav%2Factivity-dark.svg&w=32&q=75"
+            class="left-img"
+          />
+
+          <div class="left-text" onclick="acti()" id="acti">
+            <h2>Activity</h2>
+            <p>Explore the metaverse</p>
+          </div>
+        </div>
+        <div class="left-box">
+          <img
+            src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fnav%2Fcreators-dark.svg&w=32&q=75"
+            class="left-img"
+          />
+
+          <div class="left-text" onclick="create()" id="Create">
+            <h2>Creators</h2>
+            <p>Discover creators & communities</p>
+          </div>
+        </div>
+      </div>
+      <!-- LEFT BOX  -->
+      <!-- RIGHT BOX  -->
+      <div class="right">
+        <div class="right-box1">
+          <div class="right-text">
+            <img
+              style="background-color: rgb(27, 26, 41)"
+              src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Fidea.svg&w=128&q=75"
+              style="height: 40px"
+            />
+
+            <p>
+              Log in & get started by creating a token, or import an existing
+              token
+            </p>
+          </div>
+        </div>
+        <!-- smal,l boxes  -->
+        <div class="right-box2">
+          <div class="box-one">
+            <div class="single-box">
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Fmint-dark.svg&w=64&q=75"
+                class="img-one"
+              />
+              <img
+                src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                class="img-two"
+                alt=""
+              />
+              <div class="img-two"></div>
+              <div class="box2">
+                <div class="in-head">
+                  <h2>Create</h2>
+                  <span>Guide</span>
+                </div>
+                <p>Launch a persolna oe community token</p>
+              </div>
+            </div>
+
+            <div class="single-box">
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Fairdrop-dark.svg&w=64&q=75"
+                width="50px"
+                style="margin-bottom: 40px"
+                class="img-one"
+              />
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                class="img-two"
+              />
+              <div class="box2">
+                <div class="in-head">
+                  <h2>Airdrop</h2>
+                  <span>Guide</span>
+                </div>
+
+                <p>Send tokens in bulk to your community</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-two">
+            <div class="single-box">
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flockup-dark.svg&w=64&q=75"
+                class="img-one"
+              />
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                class="img-two"
+              />
+              <div class="box2">
+                <div class="in-head">
+                  <h2>Vesting</h2>
+                  <span>Guide</span>
+                </div>
+
+                <p>Create vesting schedules for your token</p>
+              </div>
+            </div>
+
+            <div class="single-box">
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Freward-dark.svg&w=64&q=75"
+                class="img-one"
+              />
+              <img
+                src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                class="img-two"
+              />
+              <div class="box2">
+                <div class="in-head">
+                  <h2>Quests</h2>
+                  <span>Guide</span>
+                </div>
+
+                <p>Create quests to reward contributors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box3">
+          <div class="inner-box">
+            <div class="box3-text">
+              <div class="img">
+                <h2>Vests</h2>
+                <img
+                  src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                  height="30px"
+                  alt=""
+                />
+              </div>
+              <p>Create a vesting schedule to view more information</p>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="box3-text">
+              <div class="img">
+                <h2>Transactions</h2>
+                <img
+                  src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                  height="30px"
+                  alt=""
+                />
+              </div>
+              <p>Create an airdrop to view your transactions.</p>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="box3-text">
+              <div class="img">
+                <h2>Token Supporters and Details</h2>
+                <img
+                  src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                  height="30px"
+                  alt=""
+                />
+              </div>
+              <p>Create a token to view your supporters and details.</p>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="box3-text">
+              <div class="img">
+                <h2>Token Settings</h2>
+                <img
+                  src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdashboard%2Flock-dark.svg&w=32&q=75"
+                  height="30px"
+                  alt=""
+                />
+              </div>
+              <p>Create a token to view your token settings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- right  -->
+
+    <!-- RIGHT BOX  -->
+    <footer class="foot">
+      <div class="foot-text">
+        <h1 style="background-color: rgb(23, 22, 38)">COINVISE</h1>
+        <p style="background-color: rgb(23, 22, 38)">
+          Economic freedom for creators
+        </p>
+      </div>
+      <div class="foot-para">
+        <div class="foot-img" style="background-color: rgb(23, 22, 38)">
+          <a href="" class="img"
+            ><img
+              src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Fdiscord-dark.svg&w=32&q=75"
+              height="30px"
+              alt=""
+          /></a>
+
+          <a href="" class="img"
+            ><img
+              src="https://www.coinvise.co/_next/image?url=%2Fimages%2Fgithub-dark.svg&w=32&q=75"
+              width="30px"
+              alt=""
+          /></a>
+          <a href="" class="img"
+            ><img
+              src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Finstagram-dark.svg&w=32&q=75"
+              width="30px"
+              alt=""
+          /></a>
+          <a href="" class="img"
+            ><img
+              src="	https://www.coinvise.co/_next/image?url=%2Fimages%2Ftwitter-dark.svg&w=32&q=75"
+              width="30px"
+              alt=""
+          /></a>
+          <div class="foot2">
+            <p style="background-color: rgb(23, 22, 38)">
+              &copy; 2022 Coinvise by TokenFi Inc
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function create(){
+         document.getElementById("Create").style.color = "rgb(235, 172, 119)"
+         document.getElementById("acti").style.color = "   rgb(191, 190, 208)"
+         document.getElementById("dash").style.color = "   rgb(191, 190, 208)"
+      }
+      
+      function acti(){
+         document.getElementById("acti").style.color = "rgb(235, 172, 119)"
+         document.getElementById("Create").style.color = "   rgb(191, 190, 208)"
+         document.getElementById("dash").style.color = "   rgb(191, 190, 208)"
+      }
+      function dash(){
+         document.getElementById("dash").style.color = "rgb(235, 172, 119)"
+         document.getElementById("Create").style.color = "   rgb(191, 190, 208)"
+         document.getElementById("acti").style.color = "   rgb(191, 190, 208)"
+      }
+
+    
+    </script>
+  </body>
+</html>
